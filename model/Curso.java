@@ -38,6 +38,9 @@ public class Curso {
         for (Disciplina disciplina : disciplinas) {
             saida += (disciplina.getNomeDisciplina() + " - ");
         }
+        if (!saida.isEmpty()) {
+            saida = saida.substring(0, saida.length() - 3);
+        }
         return saida;
     }
 
